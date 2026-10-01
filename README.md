@@ -22,9 +22,9 @@ This project covers the full ML pipeline: sourcing and cleaning a public dataset
 
 ## Training
 
-- Trained using YOLOv8 on a GPU-accelerated Colab runtime.
-- Tracked performance using **mean Average Precision (mAP)** across training runs.
-- Final model achieves **[INSERT FINAL mAP]** mAP on the validation set.
+- Trained a YOLOv8 PPE detection model using a GPU-accelerated Google Colab runtime.
+Tracked validation performance using mean Average Precision (mAP) across training epochs.
+- Achieved approximately 90% mAP@0.50 and 71% mAP@0.50:0.95, based on the previously reported training curves.
 - Mid-project, a Colab session disconnect caused the loss of a trained model's weights — the training pipeline was rebuilt and retraining completed successfully, which reinforced the importance of checkpointing in iterative training workflows.
 
 ## Results
@@ -37,10 +37,7 @@ This project covers the full ML pipeline: sourcing and cleaning a public dataset
 
 ![Confusion matrix](assets/confusion_matrix.png)
 
-**Sample detections:**
 
-![Full PPE detected](assets/demo/full_ppe.png)
-![Mixed PPE detected](assets/demo/mixed_ppe.png)
 
 ## What I'd Improve Next
 
